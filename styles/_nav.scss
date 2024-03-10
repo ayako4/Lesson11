@@ -1,0 +1,19 @@
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &__list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      a {
+         display: flex;
+         justify-content: space-between;
+         text-decoration: none;
+         color: $main-color;
+         padding: 20px;
+      }
+   }
+}

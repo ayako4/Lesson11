@@ -1,4 +1,4 @@
-body {
+.container {
   font-family: "Mulish", sans-serif;
   margin: 125px;
 }
@@ -7,7 +7,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: cornflowerblue;
 }
 .nav__list {
   display: flex;
@@ -28,7 +27,6 @@ body {
   grid-template-rows: 1fr 2fr;
   height: 40vh;
   gap: 1rem;
-  background-color: darkcyan;
 }
 .title__one {
   grid-column: 1/2;
@@ -48,10 +46,6 @@ body {
 
 .images {
   display: flexbox;
-  flex-direction: row;
-  /*display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;*/
   margin: 30px;
 }
 
@@ -80,6 +74,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*.awards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
 .awards__one {
   display: grid;
@@ -102,11 +100,73 @@ body {
   grid-column: 4/5;
   grid-row: 1/2;
 }
+.awards__one-subtitle2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.awards__one-text2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.awards__one-year2 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
 .awards__two {
-  background-color: coral;
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.awards__two-title {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.awards__two-subtitle {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.awards__two-text {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.awards__two-year {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.awards__two-subtitle2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.awards__two-text2 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.awards__two-year2 {
+  grid-column: 4/5;
+  grid-row: 2/3;
 }
 
-footer {
+hr {
+  width: 1110px;
+  height: 2px;
+  color: #979797;
+  background-color: #d8d8d8;
+}
+
+.footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.footer ul a {
+  text-decoration: none;
+  color: #111111;
+  padding: 10px;
+}
+.footer__icons {
+  width: 100px;
 }
